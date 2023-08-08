@@ -9,4 +9,4 @@ elif last_digit == 0:
     rest = "0"
 else:
     rest = "less than 6 and not 0"
-print(f"Last digit of {number} is {last_digit} and is {comparison_string}")
+print(f"Last digit of {number} is {last_digit} and is {rest}")
