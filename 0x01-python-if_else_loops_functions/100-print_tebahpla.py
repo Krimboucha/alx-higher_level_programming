@@ -4,5 +4,5 @@ while (i >= 97):
     hnqz = 32
     if i % 2 == 0:
         hnqz = 0
-        print("{:s}".format(chr(i - hnqz)), end="")
+    print("{:s}".format(chr(i - hnqz)), end="")
     i -= 1
