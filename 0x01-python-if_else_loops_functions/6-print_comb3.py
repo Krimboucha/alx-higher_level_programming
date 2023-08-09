@@ -5,7 +5,7 @@ for i in range(10):
         print("{}{}".format(i, j), end=sep)
         if i == 8 and j == 9:
             sep = "\n"
-            print("{}{}{}".format(i, j, sep))
+            print("{}{}".format(i, j), end=sep)
 #            continue
 #        print("{}{}".format(i, j), end=sep)
 
