@@ -9,7 +9,7 @@ if __name__ == "__main__":
     elif num_arg == 0:
         arg += "."
         print("{:d}{:s}".format(num_arg, arg))
-    else
+    else:
         arg += "s:"
         print("{:d}{:s}".format(num_arg, arg))
     i = 1
