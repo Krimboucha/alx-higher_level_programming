@@ -7,7 +7,7 @@ if __name__ == "__main__":
         arg += ":"
         print("{:d}{:s}".format(num_arg, arg))
     elif num_arg == 0:
-        arg += "."
+        arg += "s."
         print("{:d}{:s}".format(num_arg, arg))
     else:
         arg += "s:"
