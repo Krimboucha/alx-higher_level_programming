@@ -1,6 +1,7 @@
 #include "lists.h"
-
-int calculate_length(listint_t *head)
+#include <stddef.h>
+#include <stdlib.h>
+int half_length(listint_t *head)
 {
 	int length = 0;
 	listint_t *current = head;
@@ -30,7 +31,7 @@ listint_t* reverseList(listint_t* head)
 int is_palindrome(listint_t **head)
 {
 	listint_t *reversedHead = reverseList(*head);
-	int middle = calculate_length(*head);
+	int middle = half_length(*head);
 	listint_t *originalCurrent = *head;
 	listint_t *reversedCurrent = reversedHead;
 	int i;
@@ -38,7 +39,7 @@ int is_palindrome(listint_t **head)
 	i = 0;
 	while (i <= middle)
 	{
-		if (originalCurrent->value != reversedCurrent->value)
+		if (originalCurrent->n != reversedCurrent->n)
     			return (0);
 		originalCurrent = originalCurrent->next;
 		reversedCurrent = reversedCurrent->next;
