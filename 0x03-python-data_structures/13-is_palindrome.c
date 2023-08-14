@@ -37,9 +37,9 @@ int is_palindrome(listint_t **head)
 	int i;
 
 	i = 0;
-	if (*head == NULL || (*head)->next == NULL)
-		return (1);
-	while (i <= middle)
+/*	if (*head == NULL || (*head)->next == NULL)
+*		return (1);
+*/	while (i <= middle)
 	{
 		if (originalCurrent->n != reversedCurrent->n)
     			return (0);
