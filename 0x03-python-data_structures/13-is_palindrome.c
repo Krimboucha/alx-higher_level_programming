@@ -45,13 +45,5 @@ int is_palindrome(listint_t **head)
 		reversedCurrent = reversedCurrent->next;
 		i++;
 	}
-/**	listint_t *current = reversedHead;
-*
-*	while (current != NULL)
-*	{
-*		listint_t *temp = current;
-*		current = current->next;
-*		free(temp);
-*	}
-*/	return (1);
+	return (1);
 }
