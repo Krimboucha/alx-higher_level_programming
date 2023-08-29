@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""""defines a square class"""
+"""Class of square definition"""
+
+
 class Square:
-    """empty square"""
+    """body of square class"""
     pass
