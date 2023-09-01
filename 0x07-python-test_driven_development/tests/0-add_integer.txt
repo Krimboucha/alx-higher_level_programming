@@ -37,7 +37,7 @@ Adding a positive float and a negative integer (a = 10.5 and b = -2)
 	    >>> add_integer(10.5, -2)
 	    8
 
-Adding two negative floats (a = -10.5 and b = 2.0)
+Adding two negative floats (a = -10.5 and b = -2.0)
 	    >>> add_integer(-10.5, -2.0)
 	    -12
 
@@ -83,9 +83,9 @@ Passing a only one string
 	      ...
     TypeError: a must be an integer
 
-Adding two float numbers (a = 1.2 and b = 4.2)
-    >>> add_integer(1.2, 4.2)
-    5
+Adding two float numbers (a = 1.2 and b = 2.2)
+    >>> add_integer(1.2, 2.2)
+    3
 
 Case Overflow:
 
