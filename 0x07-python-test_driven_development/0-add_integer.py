@@ -1,5 +1,13 @@
 #!/usr/bin/python3
+"""
+    add_integer adds two ints or floats
+    Parameters: a int or float
+                b int or float (default value 98)
+"""
 def add_integer(a, b=98):
+    """
+    Returns: int: The sum of a and b.
+    """
     if not isinstance(a, (int, float)):
         raise TypeError("a must be an integer")
     if not isinstance(b, (int, float)):
