@@ -4,4 +4,4 @@
 
 class Rectangle:
     """body of Rectangle class"""
-     pass
+pass
