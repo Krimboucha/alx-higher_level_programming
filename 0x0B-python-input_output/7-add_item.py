@@ -12,9 +12,13 @@ def add_item():
     and then save them to a file
     """
     data = []
-    obj = load_from_json_file("add_item.json")
-    if len(argv) >= 2:
-        data = obj + [argv[i] for i in range(1, len(argv))]
+    try:
+        obj = load_from_json_file("add_item.json")
+        if len(argv) >= 2:
+            data = obj + [argv[i] for i in range(1, len(argv))]
+    except Exception:
+        if len(argv) >= 2:
+            data = [argv[i] for i in range(1, len(argv))]
     save_to_json_file(data, "add_item.json")
 
 
